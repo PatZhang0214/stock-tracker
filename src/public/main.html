@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- Tailwind CSS CDN link -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-          rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <script type="importmap">
         {
             "imports": {
@@ -15,12 +15,35 @@
         }
     </script>
 </head>
-
 <body>
-    <style>
-        body { margin: 0; }
-    </style>
-    <script type="module" src="main.js"></script>
+    <main>
+        <nav class="absolute text-white w-full bg-gradient-to-b from-[#0066CC] to-black h-28 pt-4 sticky-0">
+            <div class="mt-3">
+                <a class ="border-2 rounded-lg ml-24 p-3" href="#">
+                    Stocks Right Now
+                </a>
+                <a class ="border-2 rounded-lg ml-12 p-3" href="#">
+                    News
+                </a>
+                <a class ="border-2 rounded-lg ml-12 p-3"href="#">
+                    My Portfolio
+                </a>
+            </div>
+        </nav>
+
+
+    </main>
+    <div class="bg-black" id="top-graphic-canvas">
+        <div class="" id="top-graphic">
+            <script type="module" src="main.js"></script>
+        </div>
+        <!-- <script type="module" src="main.js"></script> -->
+    </div>
+    <div>
+        <p>
+            Testing
+        </p>
+    </div>
 </body>
 
 </html>
