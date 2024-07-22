@@ -17,23 +17,30 @@
 </head>
 <body>
     <main>
-        <nav class="bg-black fixed text-white w-full bg-gradient-to-b from-[#0066CC] to-black h-28 pt-4 sticky-0">
-            <div class="mt-6 border-10 rounded-lg">
-                <a class ="border-2 rounded-lg ml-24 p-3 hover:bg-gray-200 hover:text-black" href="#">
-                    The Market
-                </a>
-                <a class ="border-2 rounded-lg ml-12 p-3 hover:bg-gray-200 hover:text-black" href="#">
-                    News
-                </a>
-                <a class ="border-2 rounded-lg ml-12 p-3 hover:bg-gray-200 hover:text-black"href="#">
-                    My Portfolio
-                </a>
+        <nav class="fixed text-white w-full bg-gradient-to-b from-black h-28 pt-4 sticky-0">
+            <div class="flex flex-row mt-6 border-10">
+                <div class="w-1/2">
+                    <a class ="border-2 rounded-lg ml-24 p-3 hover:bg-gray-200 hover:text-black" href="#">
+                        The Market
+                    </a>
+                    <a class ="border-2 rounded-lg ml-12 p-3 hover:bg-gray-200 hover:text-black" href="#">
+                        News
+                    </a>
+                    <a class ="border-2 rounded-lg ml-12 p-3 hover:bg-gray-200 hover:text-black" href="#">
+                        My Portfolio
+                    </a>
+                </div>
+                <div class="flex bg-red w-1/2 justify-center">
+                    <div class="flex justify-center border-2 rounded-lg">
+                        <input class="w-80 h-8 text-black" type="text" placeholder="  Search">
+                    </div>
+                </div>
             </div>
         </nav>
 
 
     </main>
-    <div class="bg-black bg-gradient-to-b from-black to gray" id="top-graphic-canvas">
+    <div class="bg-black bg-gradient-to-b from-black" id="top-graphic-canvas">
         <div class="pt-28" id="top-graphic">
             <script type="module" src="main.js"></script>
         </div>
