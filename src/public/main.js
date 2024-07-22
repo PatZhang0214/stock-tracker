@@ -20,15 +20,14 @@ function animate() {
 	cube.rotation.x += 0.005;
 	cube.rotation.y += 0.005;
 	renderer.render( scene, camera );
-
 }
 
 // Resize
 
 window.addEventListener('resize', () => {
-	camera.aspect = window.innerWidth / window.innerHeight
+	camera.aspect = container.offsetWidth / container.offsetHeight
 	camera.updateProjectionMatrix()
-	renderer.setSize(window.innerWidth, window.innerHeight)
+	renderer.setSize(container.offsetWidth, container.offsetHeight)
 })
 
 const loop = () => {
