@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article List</title>
+</head>
+<body>
+    <h1>Article List</h1>
+    <ul id="userList"></ul>
+    <script>
+        // Function to fetch user data from the backend
+        async function fetchUsers() {
+            try {
+                const response = await fetch('http://localhost:3000/api/users');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const users = await response.json();
+                const userList = document.getElementById('userList');
+
+                // Populate the user list
+                // users.forEach(user => {
+                //     const li = document.createElement('li');
+                //     li.textContent = `${user.id}: ${user.name}`;
+                //     userList.appendChild(li);
+                // });
+                console.log(users)
+
+                const D = users.data
+                D.forEach(article => {
+                    const li = document.createElement('li');
+                    li.textContent = `${article.title}: ${article.description}`;
+                    userList.appendChild(li);
+                });
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
+        }
+
+        // Call the function to fetch users on page load
+        fetchUsers();
+    </script>
+</body>
+</html>
