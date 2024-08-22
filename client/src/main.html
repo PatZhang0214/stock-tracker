@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Tailwind CSS CDN link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <nav class="fixed text-white w-full bg-gradient-to-b from-black h-28 pt-4 sticky-0">
+            <div class="flex flex-row mt-6 border-10">
+                <div class="w-1/2">
+                    <a class ="border-2 rounded-lg ml-24 p-3 hover:bg-gray-200 hover:text-black" href="#">
+                        The Market
+                    </a>
+                    <a class ="border-2 rounded-lg ml-12 p-3 hover:bg-gray-200 hover:text-black" href="#">
+                        News
+                    </a>
+                    <a class ="border-2 rounded-lg ml-12 p-3 hover:bg-gray-200 hover:text-black" href="#">
+                        My Portfolio
+                    </a>
+                </div>
+                <div class="flex bg-red w-1/2 justify-center">
+                    <div class="flex justify-center border-2 rounded-lg">
+                        <input class="w-80 h-8 text-black" type="text" placeholder="  Search">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </main>
+    <div class="bg-black bg-gradient-to-b from-black" id="top-graphic-canvas">
+        <div class="pt-28" id="top-graphic">
+            <script type="module" src="main.js"></script>
+        </div>
+    </div>
+    <div class="flex flex-col pl-20 pr-20 m-20">
+        <h1 class="font-semibold text-2xl">Explore</h1>
+        <hr class="w-160 h-0.5 my-4 bg-gray-900 border-0 dark:bg-gray-700">
+        <div id="explore-section-0" class="flex flex-row">
+        </div>
+        <h1 class="font-semibold text-2xl">Today's Front Page</h1>
+        <hr class="w-160 h-0.5 my-4 bg-gray-900 border-0 dark:bg-gray-700">
+        <div id="explore-section-1" class="flex flex-row justify-center">
+            <script type="module" src="news.js"></script>
+            <!-- <article id="explore-subsection-0" class="m-20">
+                <img src="placeholder.jpeg" alt="Hu Tao The Placeholder" class="max-w-l max-h-60">
+                <p>
+                    Lorem ipsum
+                </p>
+            </article>
+            <div id="explore-subsection-1" class="m-20">
+                <img src="placeholder.jpeg" alt="Hu Tao The Placeholder" class="max-w-l max-h-60">
+                <p>
+                    Lorem ipsum
+                </p>
+            </div>
+            <div id="explore-subsection-2" class="m-20">
+                <img src="placeholder.jpeg" alt="Hu Tao The Placeholder" class="max-w-l max-h-60">
+                <p>
+                    Lorem ipsum
+                </p>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>
+
