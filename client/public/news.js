@@ -9,7 +9,7 @@ async function fetchUsers() {
       const userList = document.getElementById('userList');
       console.log(users)
 
-      const D = users.data
+      const D = users
       D.forEach(article => {
         const contain = document.getElementById("explore-section-1")
         const format = `<article id="explore-subsection-0" class="m-20">
