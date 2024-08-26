@@ -1,7 +1,6 @@
 const test = require('dotenv').config({path: './server/src/.env'})
 const key = process.env.NEWS_API_KEY
 const fs = require("fs").promises;
-var json = require('./newsDB.json'); //with path
 const express = require('express');
 const cors = require('cors'); // Enable CORS
 const app = express();
@@ -16,6 +15,8 @@ const now = new Date(); // Get the current date and time
 let hours = (currTime.getHours() - 10).toString();
 let minutes = currTime.getMinutes().toString();
 const FILEPATH = "./server/src/newsDB.json"
+const hist_key = process.env.HIST_DATA_KEY
+const {DateTime} = require('luxon')
 
 // Checklist:
 
@@ -28,8 +29,8 @@ const FILEPATH = "./server/src/newsDB.json"
 
 
 
-// Read NewsAPI docs on time | |
-// Test NewsAPI time parameters | |
+// Read NewsAPI docs on time |/|
+// Test NewsAPI time parameters |/|
 // Add cache |/|
 
 
@@ -112,7 +113,44 @@ const fetchPromise = async() => {
     }
 }
 fetchPromise();
-// GET endpoint for users
+
+const getChart = async() => {
+    let curr = DateTime.now().setZone("America/New_York").weekday
+    const symb = "AAPL"
+    if (curr == 6  || curr == 7) {
+
+        const apiUrl = `https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-02-10?adjusted=true&sort=asc&apiKey=${hist_key}`;
+
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            let dataArray = [];
+
+            for (let i = data.results.length - 1; i >= 0; i--) {
+                let obj = {
+                    close: data.results[i].c,
+                    high: data.results[i].h,
+                    low: data.results[i].l,
+                    open: data.results[i].o,
+                    timestamp: data.results[i].t,
+                    volume: data.results[i].vw
+                };
+                dataArray.push(obj);
+            }
+            console.log('Data fetched successfully:', dataArray);
+            return dataArray;
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            throw error; // Rethrow to be caught in the route
+        }
+    }
+    return []; // Return an empty array if the condition is not met
+}
+getChart();
+    // GET endpoint for users
 app.get('/api/users', (req, res) => {
     fetchPromise().then(data => {
         console.log("Data Recieved Successfully: ", data);
@@ -121,6 +159,17 @@ app.get('/api/users', (req, res) => {
         console.error("Failed to fetch data: ", error);
     });
 });
+
+app.get('/api/chart', async (req, res) => {
+    try {
+        const data = await getChart();
+        console.log("Chart Data Received Successfully: ", data);
+        res.json(data);
+    } catch (error) {
+        console.error("Failed to fetch data: ", error);
+        res.status(500).json({ error: 'Failed to fetch data' });
+    }
+})
 
 // Start the server
 app.listen(PORT, () => {
