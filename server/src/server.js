@@ -129,7 +129,7 @@ const getChart = async() => {
             const data = await response.json();
             let dataArray = [];
 
-            for (let i = data.results.length - 1; i >= 0; i--) {
+            for (let i = 0; i < data.results.length; i++) {
                 let obj = {
                     close: data.results[i].c,
                     high: data.results[i].h,
