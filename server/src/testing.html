@@ -1,40 +1,27 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article List</title>
-</head>
-<body>
-    <h1>Article List</h1>
-    <ul id="userList"></ul>
-    <script>
-        // Function to fetch user data from the backend
-        async function fetchUsers() {
-            try {
-                const response = await fetch('http://localhost:3000/api/users');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const users = await response.json();
-                const userList = document.getElementById('userList');
-
-                console.log(users)
-
-                const D = users.data
-                D.forEach(article => {
-                    const li = document.createElement('li');
-                    li.textContent = `${article.title}: ${article.description}`;
-                    userList.appendChild(li);
-                });
-            } catch (error) {
-                console.error('Fetch error:', error);
+<html lang="en" >
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three/examples/jsm/"
             }
         }
-
-        // Call the function to fetch users on page load
-        fetchUsers();
     </script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="keywords" content="Quick Start"/>
+    <meta name="description" content="Quick Start"/>
+    <title>Quick Start</title>
+  </head>
+  <body>
+    <div id="explore-section-0" class="flex flex-row">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/klinecharts/dist/umd/klinecharts.min.js"></script>
+    <script type="module" src="./charts.js"></script>
+    <div id="chart-1" style="width:300px;height:300px" class="m-20" ></div>
+    </div>
+  </body>
 </html>

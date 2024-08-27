@@ -117,7 +117,7 @@ fetchPromise();
 const getChart = async() => {
     let curr = DateTime.now().setZone("America/New_York").weekday
     const symb = "AAPL"
-    if (curr == 6  || curr == 7) {
+    if (true) {
 
         const apiUrl = `https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-02-10?adjusted=true&sort=asc&apiKey=${hist_key}`;
 
