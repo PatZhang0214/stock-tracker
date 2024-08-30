@@ -10,9 +10,9 @@ window.onload = async function () {
     chart.setStyles(chartOptions)
     const response = await fetch('http://localhost:3000/api/chart');
     let arr = await response.json()
-    chart.applyNewData(arr)
-    chart1.applyNewData(arr)
-    chart2.applyNewData(arr)
+    chart.applyNewData(arr[0])
+    chart1.applyNewData(arr[1])
+    chart2.applyNewData(arr[2])
     chart1.setStyles(chartOptions)
     chart2.setStyles(chartOptions)
 

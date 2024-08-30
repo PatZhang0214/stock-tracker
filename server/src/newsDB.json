@@ -1,5 +1,105 @@
 [
   {
+    "uuid": "e2a92902-07a3-4bc9-94b5-d970a885490b",
+    "title": "Reserve Bank of India",
+    "description": "",
+    "keywords": "",
+    "snippet": "Today, the Reserve Bank released data on the performance of the private corporate sector during the first quarter of 2024-25 drawn from abridged quarterly finan...",
+    "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=58604",
+    "image_url": "https://www.rbi.org.in/images/Rbinote.jpeg",
+    "language": "en",
+    "published_at": "2024-08-30T17:05:00.000000Z",
+    "source": "rbi.org.in",
+    "categories": [
+      "business",
+      "general"
+    ],
+    "relevance_score": null
+  },
+  {
+    "uuid": "50ec5b67-e753-411c-8f3b-53a934645566",
+    "title": "US weekly Baker Hughes oil rig count unchanged at 483",
+    "description": "The latest drilling data from Baker Hughes",
+    "keywords": "",
+    "snippet": "Oil is having a rough one today, down 3% after a report said OPEC was planning to proceed with the October production rise.\n\nOil rigs unchanged at 48.\n\nGas rigs...",
+    "url": "https://www.forexlive.com/news/us-weekly-baker-hughes-oil-rig-count-unchanged-at-483-20240830/",
+    "image_url": "https://images.forexlive.com/fl-static/fl-thumbnail.jpg",
+    "language": "en",
+    "published_at": "2024-08-30T17:03:08.000000Z",
+    "source": "forexlive.com",
+    "categories": [
+      "business"
+    ],
+    "relevance_score": null
+  },
+  {
+    "uuid": "764cf73f-57fb-4c37-9d2c-b7900dce5c3f",
+    "title": "Sentiment Improves as Inflation Loosens Grip on Consumers in August",
+    "description": "The Michigan Consumer Sentiment Index moved higher in final reading for August, rebounding from four straight months of decline.",
+    "keywords": "",
+    "snippet": "Key Takeaways The Michigan Consumer Sentiment Index moved higher in the final reading for August, rebounding after four months of decline.\n\nInflation expectatio...",
+    "url": "https://www.investopedia.com/sentiment-improves-as-inflation-loosens-grip-on-consumers-in-august-8704547",
+    "image_url": "https://www.investopedia.com/thmb/IJgoR_-D3yzLh25jRSXdRbEQFzw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2166812680-2618a5609e5841b1a8425e78a86026f0.jpg",
+    "language": "en",
+    "published_at": "2024-08-30T17:02:58.000000Z",
+    "source": "investopedia.com",
+    "categories": [
+      "business",
+      "general"
+    ],
+    "relevance_score": null
+  },
+  {
+    "uuid": "21d84e8d-3086-49f1-8bb6-d50223c8ba36",
+    "title": "Fleet Completes $2.5M Seed Round",
+    "description": "SAN FRANCISCO, CA, Fleet, a modern commuter benefits management platform, has announced the close of its $2.5 million seed round.",
+    "keywords": "",
+    "snippet": "Fleet Completes $2.5M Seed Round Back to Home\n\nSAN FRANCISCO, CA, Fleet, a modern commuter benefits management platform, has announced the close of its $2.5 mil...",
+    "url": "https://vcnewsdaily.com/fleet-commuter/venture-capital-funding/gyycwlmxdv",
+    "image_url": "https://vcnewsdaily.com/images/vcnd-logo.png",
+    "language": "en",
+    "published_at": "2024-08-27T20:19:47.000000Z",
+    "source": "vcnewsdaily.com",
+    "categories": [
+      "business",
+      "tech"
+    ],
+    "relevance_score": null
+  },
+  {
+    "uuid": "c0e4efd1-7b2e-48e4-b0fb-497abec7ee65",
+    "title": "Paramount Global's Stock Dips as \"Go-Shop\" Period Ends and Bronfman Withdraws Bid",
+    "description": "Paramount Global (PARA -5%) saw its stock decline after ending its \"Go-Shop\" period. This period was extended last week following a bid from Edgar Bronfman Jr.",
+    "keywords": "GuruFocus, Article, News, GuruFocus Research, PARA, FUBO",
+    "snippet": "Paramount Global (PARA -5%) saw its stock decline after ending its \"Go-Shop\" period. This period was extended last week following a bid from Edgar Bronfman Jr. ...",
+    "url": "https://www.gurufocus.com/news/2511139/paramount-globals-stock-dips-as-goshop-period-ends-and-bronfman-withdraws-bid",
+    "image_url": "https://static.gurufocus.com/logos/0C0000077M.png?20",
+    "language": "en",
+    "published_at": "2024-08-27T20:14:13.000000Z",
+    "source": "gurufocus.com",
+    "categories": [
+      "business"
+    ],
+    "relevance_score": null
+  },
+  {
+    "uuid": "beacae1b-dc29-4394-a275-d145feeeeb71",
+    "title": "This Coming Change Could Unlock the U.S. Housing Market",
+    "description": "The vast majority of homeowners have a mortgage rate below the current average, which discourages many from selling their homes. That may soon change.",
+    "keywords": "",
+    "snippet": "Key Takeaways A majority of homeowners are paying interest on their mortgages at rates below 6%.\n\nThe average rate is hovering near 6.5%, discouraging homeowner...",
+    "url": "https://www.investopedia.com/homeowners-let-go-of-mortgage-rates-from-the-pandemic-that-locked-up-the-housing-market-8701964",
+    "image_url": "https://www.investopedia.com/thmb/cGO91Etgq7ApqORhc2MtR43pp1Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1603036391-17cd33b199e343cea252c8d02ecc0ea6.jpg",
+    "language": "en",
+    "published_at": "2024-08-27T20:12:41.000000Z",
+    "source": "investopedia.com",
+    "categories": [
+      "business",
+      "general"
+    ],
+    "relevance_score": null
+  },
+  {
     "uuid": "d6f79855-1041-46c6-8359-079e095bbf7d",
     "title": "Russia is Still Communist",
     "description": "Henry Makow's official web \nsite. Exposing Feminism and the New World Order",
